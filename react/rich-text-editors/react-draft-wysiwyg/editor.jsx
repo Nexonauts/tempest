@@ -6,7 +6,7 @@ import {inline} from "./toolbar/option";
 
 // Without SSR 
 import { Editor } from 'react-draft-wysiwyg';
-
+import "./style.scss"; // Complie this before running the code. (Import in _app.js file for Next.js)
 // with NextJs SSR (also import this component with next/dynamic 
 const Editor = dynamic(() => import('react-draft-wysiwyg').then((mod) => mod.Editor), {
   ssr: false,
